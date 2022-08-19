@@ -1,12 +1,12 @@
 import { View } from 'react-native';
-import { Header } from '../../components/Header';
+import Logo from '../../../assets/Logo.svg';
 
 import { styles } from './styles'
 
-export function Home() {
+export function Header() {
   return (
     <View style={styles.container}>
-      <Header />
+      <Logo />
     </View>
   )
 }
