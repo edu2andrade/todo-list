@@ -31,6 +31,11 @@ The challenge here is use only Expo Managed Workflow and the Core Components and
 - [react-native-svg](https://docs.expo.dev/versions/latest/sdk/svg/)
 
 
+You can see the desktop version **live** [here](https://todo-list-web-ten.vercel.app/).
+Or the desktop **repository** [here](https://github.com/edu2andrade/todo-list-web).
+
+---
+
 ## :octocat: How to test and install
 
 ### You'll need:
