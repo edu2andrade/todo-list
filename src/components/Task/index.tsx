@@ -6,12 +6,12 @@ import CheckDone from '../../../assets/checkDone.svg';
 
 import { styles } from './styles';
 
-import { TaskListProps } from '../../screens/Home';
+import { TaskDetails } from '../../screens/Home';
 
 interface TaskProps {
-  task: TaskListProps;
-  onRemove: (name: string) => void;
-  onComplete: (name: string) => void;
+  task: TaskDetails;
+  onRemove: (taskId: string) => void;
+  onComplete: (taskId: string) => void;
 }
 
 export function Task({ task, onRemove, onComplete }: TaskProps) {
@@ -19,7 +19,7 @@ export function Task({ task, onRemove, onComplete }: TaskProps) {
   return (
     <View style={styles.container}>
       
-      <TouchableOpacity style={styles.trashButton} onPress={() => onComplete(task.name)}>
+      <TouchableOpacity style={styles.trashButton} onPress={() => onComplete(task.id)}>
         {
           task.isCompleted
           ? <CheckDone />
@@ -31,7 +31,7 @@ export function Task({ task, onRemove, onComplete }: TaskProps) {
         {task.name}
       </Text>
 
-      <TouchableOpacity style={styles.trashButton} onPress={() => onRemove(task.name)} >
+      <TouchableOpacity style={styles.trashButton} onPress={() => onRemove(task.id)} >
         <Trash />
       </TouchableOpacity>
 

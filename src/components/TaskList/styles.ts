@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  container: {
+  progressBarContainer: {
     width: '97%', // Gambiarra! :)
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
     marginRight: 8,
   },
 
-  finished: {
+  concluded: {
     color: '#8284FA',
     fontWeight: '700',
     marginRight: 8,
@@ -40,5 +40,30 @@ export const styles = StyleSheet.create({
     paddingVertical: 2,
     paddingHorizontal: 10,
     borderRadius: 10,
+  },
+
+  //////////////////////////////////////////////////
+
+  flatList: {
+    width: '100%',
+  },
+
+  listEmptyContainer: {
+    marginTop: 48,
+    alignItems: 'center',
+  },
+
+  listEmptyTextBold: {
+    color: '#808080',
+    fontSize: 14,
+    fontWeight: "700",
+    textAlign: 'center',
+    marginTop: 16,
+  },
+
+  listEmptyText: {
+    color: '#808080',
+    fontSize: 14,
+    textAlign: 'center',
   },
 });
